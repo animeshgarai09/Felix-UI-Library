@@ -1,9 +1,14 @@
 {
     "name": "@animeshgarai09/felix-ui",
-    "version": "0.0.7",
+    "version": "0.0.8",
     "description": "A react component library",
     "main": "dist/cjs/index.js",
     "module": "dist/esm/index.es.js",
+    "repository": {
+        "type": "git",
+        "url": "git://github.com/animeshgarai09/Felix-UI-Library.git"
+    },
+    "private": false,
     "scripts": {
         "rollup": "rollup -c"
     },
