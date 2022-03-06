@@ -10,7 +10,8 @@
     },
     "private": false,
     "scripts": {
-        "rollup": "rollup -c"
+        "rollup": "rollup -c",
+        "prepublishOnly": "npm install && npm run rollup"
     },
     "author": "Animesh Garai",
     "license": "MIT",
