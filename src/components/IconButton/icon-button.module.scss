@@ -1,0 +1,39 @@
+.container {
+    font-size: 1.8rem;
+    height: 1.4em;
+    width: 1.4em;
+    border-radius: 50%;
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    position: relative;
+    background: none;
+    border: none;
+    cursor: pointer;
+    color: var(--clr-black);
+    transition: 0.2s;
+    @media (hover: hover) {
+        &:hover {
+            background: var(--clr-primary-light);
+        }
+    }
+    &:active {
+        background: var(--clr-primary-light);
+    }
+    .badge {
+        display: inline-flex;
+        align-items: center;
+        justify-content: center;
+        border-radius: 10px;
+        color: #ffffff;
+        font-weight: 600;
+        height: 1rem;
+        min-width: 1rem;
+        font-size: 0.62rem;
+        background: var(--clr-primary);
+        position: absolute;
+        top: 2px;
+        left: 1.22rem;
+        border: 2px solid var(--clr-page-bg);
+    }
+}
