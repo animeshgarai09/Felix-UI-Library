@@ -1,5 +1,8 @@
 .DS_Store
 config.json
+!**/dist
+src/
+src/*
 test/fixtures/*.json
 !test/fixtures/complete.json
 !test/fixtures/malformed.json
