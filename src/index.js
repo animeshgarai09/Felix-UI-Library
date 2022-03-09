@@ -6,9 +6,10 @@ import Button from "./components/Button/Button";
 import ButtonGroup from "./components/Button/ButtonGroup";
 import ProductWrapper from "./components/Card/ProductCard/ProductWrapper";
 import ProductImage from "./components/Card/ProductCard/ProductImage";
-import ProductBody from "./components/Card/ProductCard/ProductBody";
+import { ProductBody, ProductActions } from "./components/Card/ProductCard/ProductBody";
 import ToastProvider from "./components/Toast/ToastProvider";
 import { useToast } from "./components/Toast/ToastProvider";
+import { List, ListItem } from "./components/List/List";
 import Image from "./components/Image";
 import A from './components/A';
 import Badge from "./components/Badge/Badge";
@@ -26,8 +27,11 @@ export {
     ProductWrapper,
     ProductImage,
     ProductBody,
+    ProductActions,
     ToastProvider,
     useToast,
+    List,
+    ListItem,
     IconButton,
     Image,
     Input

@@ -1,6 +1,12 @@
 @use "utils";
 @import "utils/functions.scss";
 
+body {
+    font-size: 100%;
+    color: var(--clr-text-color);
+    -webkit-tap-highlight-color: transparent;
+}
+
 a,
 a:visited,
 a:active {
