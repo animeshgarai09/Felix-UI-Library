@@ -29,7 +29,10 @@ export default [
             }),
             postcss({
                 plugins: [autoprefixer()],
-                modules: true,
+                modules: {
+                    generateScopedName: "[hash:base64:8]",
+                },
+                autoModules: true,
                 extract: true,
                 syntax: 'postcss-scss',
                 use: ['sass'],

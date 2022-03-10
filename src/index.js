@@ -1,4 +1,4 @@
-import styles from './global.scss'
+import './global.scss'
 import Avatar from "./components/Avatar/Avatar";
 import AvatarGroup from "./components/Avatar/AvatarGroup";
 import Alert from "./components/Alert/Alert";

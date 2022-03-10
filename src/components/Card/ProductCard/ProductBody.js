@@ -1,9 +1,6 @@
 import styles from './ProductCard.module.scss'
 import PropTypes from 'prop-types'
 import Rating from '../../Rating'
-import Button from '../../Button/Button'
-import { MdAdd } from 'react-icons/md'
-import { AiOutlineHeart } from 'react-icons/ai'
 
 const ProductBody = (
     {

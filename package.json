@@ -15,9 +15,6 @@
     },
     "author": "Animesh Garai",
     "license": "MIT",
-    "dependencies": {
-        "react-icons": "^4.2.0"
-    },
     "devDependencies": {
         "@babel/preset-react": "^7.16.7",
         "@rollup/plugin-commonjs": "^21.0.2",
