@@ -155,7 +155,7 @@
             justify-content: space-between;
             flex-wrap: wrap;
             align-items: center;
-            margin-top: rem(10);
+            margin-top: 0.8rem;
         }
         .price {
             span {
@@ -185,15 +185,13 @@
             }
         }
         .action_con {
-            margin: 0.5rem 0;
+            display: flex;
+            gap: 0.5rem;
             &.left_align {
                 flex: 1;
             }
             &.new_line {
                 flex-basis: 100%;
-            }
-            button {
-                margin-left: 0.5rem;
             }
         }
     }
