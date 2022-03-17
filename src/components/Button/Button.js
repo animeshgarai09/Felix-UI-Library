@@ -10,8 +10,9 @@ const Button = (
         leftIcon,               // React-icons
         rightIcon,              // React-icons
         isRound = false,        // Rounded button if true
-        isWide = false,           // Full width if true
+        isWide = false,         // Full width if true
         isTransform = true,     // Transform on hover
+        isLoading = false,      // loading animation
         onClick,                // function passed to component for onClick event
         onClickActive = false,  //Toggle active class if passes true 
         selected,               // (ButtonGroup only) act as radio button for multiple button, sets active class
@@ -44,13 +45,15 @@ const Button = (
     classNames.push(isWide && styles.wide)
     classNames.push(selected && styles.active)
     classNames.push(active && styles.active)
+    classNames.push(isLoading && styles.disable)
     classNames.push(className)
     classNames = classNames.filter(item => item !== false)
     return (
         <button type={type} role="button" className={`${classNames.join(' ')}`} onClick={btnClick}>
-            {leftIcon}
-            {children}
-            {rightIcon}
+            {isLoading && <div className={styles.loader}></div>}
+            {!isLoading && leftIcon}
+            {!isLoading && children}
+            {!isLoading && rightIcon}
         </button>
     )
 }
@@ -68,6 +71,7 @@ Button.propTypes = {
     isRound: PropTypes.bool,
     isWide: PropTypes.bool,
     isTransform: PropTypes.bool,
+    isLoading: PropTypes.bool,
     onClick: PropTypes.func,
     onClickActive: PropTypes.bool,
     selected: PropTypes.bool,

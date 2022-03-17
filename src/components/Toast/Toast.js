@@ -13,7 +13,7 @@ const Toast = (
         message,                // Message for the toast
         status = 'info',        // 'success'|| 'error' || 'warning' || 'info' || 'gray',
         dispatch,               // Dispatcher function to remove toast on close 
-        duration,               // Duration for the toast in seconds
+        duration = 3,               // Duration for the toast in seconds
         className,              // User provided class name
     }) => {
 
