@@ -16,13 +16,13 @@ const Input = (props) => {
 }
 
 
-const InputText = ({ label, errMsg, type, ref, placeholder, name, value, onChange }) => {
+const InputText = ({ label, errMsg, type, Fref, placeholder, name, value, onChange }) => {
 
     return (
         <InputGroup id={id} label={label} errMsg={errMsg}>
             <input
                 id={id}
-                ref={ref}
+                ref={Fref}
                 type={type}
                 placeholder={placeholder}
                 name={name}
@@ -33,7 +33,7 @@ const InputText = ({ label, errMsg, type, ref, placeholder, name, value, onChang
     )
 }
 
-const InputPassword = ({ label, errMsg, ref, placeholder, name, value, onChange }) => {
+const InputPassword = ({ label, errMsg, Fref, placeholder, name, value, onChange }) => {
 
     const [visible, setVisible] = useState(false)
 
@@ -43,7 +43,7 @@ const InputPassword = ({ label, errMsg, ref, placeholder, name, value, onChange 
         <InputGroup id={id} label={label} errMsg={errMsg}>
             <input
                 id={id}
-                ref={ref}
+                ref={Fref}
                 type={visible ? 'text' : 'password'}
                 placeholder={placeholder}
                 onChange={onChange}
