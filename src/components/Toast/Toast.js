@@ -1,7 +1,7 @@
 import styles from './toast.module.scss'
-// import Check from '../../svg/check.svg'
-// import Error from '../../svg/error.svg'
-// import Info from '../../svg/info.svg'
+import Check from '../../svg/check.svg'
+import Error from '../../svg/error.svg'
+import Info from '../../svg/info.svg'
 import Button from '../Button/Button'
 import { CgClose } from 'react-icons/cg'
 import PropTypes from 'prop-types'
@@ -68,12 +68,12 @@ const Toast = (
         startTimer()
     }, [])
 
-    // const getIcon = () => {
-    //     if (status == 'success') return <Check />
-    //     else if (status == 'error') return <Error />
-    //     else if (status == 'warning') return <Error />
-    //     else if (status == 'info') return <Info />
-    // }
+    const getIcon = () => {
+        if (status == 'success') return <Check />
+        else if (status == 'error') return <Error />
+        else if (status == 'warning') return <Error />
+        else if (status == 'info') return <Info />
+    }
     return (
         /* Pause timer on hover and start again onMouseLeave  */
         <div onMouseEnter={stopTimer} onMouseLeave={startTimer}
@@ -81,7 +81,7 @@ const Toast = (
         >
 
             <span className={styles.icon}>
-                {/* {getIcon()} */}
+                {getIcon()}
             </span>
 
             <div className={styles.text}>

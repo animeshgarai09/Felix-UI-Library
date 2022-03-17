@@ -1,5 +1,6 @@
 import babel from "rollup-plugin-babel"
 import resolve from "@rollup/plugin-node-resolve";
+import svgr from '@svgr/rollup'
 import external from "rollup-plugin-peer-deps-external";
 import postcss from 'rollup-plugin-postcss'
 import commonjs from "@rollup/plugin-commonjs";
@@ -38,6 +39,7 @@ export default [
                 use: ['sass'],
                 minimize: true,
             }),
+            svgr(),
             external(),
             resolve(),
             commonjs(),

@@ -34,6 +34,7 @@
         color: #a7a7a7;
         font-size: 1.3rem;
         top: rem(15);
+        z-index: 1;
         background: #edeeef;
         border-radius: 50%;
         transition: var(--transition);
@@ -187,6 +188,7 @@
         .action_con {
             display: flex;
             gap: 0.5rem;
+            margin-top: 0.5rem;
             &.left_align {
                 flex: 1;
             }
