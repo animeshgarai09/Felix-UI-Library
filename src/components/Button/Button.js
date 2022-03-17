@@ -3,6 +3,7 @@ import { useState } from 'react'
 import styles from './button.module.scss'
 const Button = (
     {
+        type = "button",        //Button type can be button or submit
         size = "md",            //'xs' || 'sm' || 'md' || 'lg', // md is by default
         theme = "primary",      //'primary' || 'info' || 'warning' || 'success' || 'gray',|| disable, // primary is by default
         variant = "solid",      //['outline','ghost','link'], // solid is by default
@@ -46,7 +47,7 @@ const Button = (
     classNames.push(className)
     classNames = classNames.filter(item => item !== false)
     return (
-        <button type='button' role="button" className={`${classNames.join(' ')}`} onClick={btnClick}>
+        <button type={type} role="button" className={`${classNames.join(' ')}`} onClick={btnClick}>
             {leftIcon}
             {children}
             {rightIcon}
@@ -55,6 +56,7 @@ const Button = (
 }
 
 Button.propTypes = {
+    type: PropTypes.string,
     size: PropTypes.oneOf(['xs', 'sm', 'md', 'lg']),
     theme: PropTypes.oneOf(['primary', 'info', 'warning', 'success', 'gray', 'disable']),
     variant: PropTypes.oneOfType([

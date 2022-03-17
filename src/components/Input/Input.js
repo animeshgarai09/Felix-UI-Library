@@ -17,7 +17,6 @@ const Input = (props) => {
 
 
 const InputText = ({ label, errMsg, type, Fref, placeholder, name, value, onChange }) => {
-
     return (
         <InputGroup id={id} label={label} errMsg={errMsg}>
             <input
