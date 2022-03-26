@@ -52,15 +52,18 @@
 
 .dark-theme {
     /* Colors */
+    --clr-text-color: var(--clr-white);
+    --clr-page-bg: #222222;
+    --clr-page-light-bg: #2a2a2a;
+    --clr-page-dark-bg: #1e1e1e;
+    --clr-card-bg: var(--clr-page-dark-bg);
     --clr-border-color-3: #303030;
     --clr-primary-light: #2f2f2f;
     --clr-input-bg: #333333;
-    --clr-card-bg: #1e1e1e;
     --clr-border-color-2: var(--clr-primary);
     --clr-card-name: var(--clr-white);
-
-    --clr-primary-dark: #a10088;
     --clr-label-white: #707070;
     --clr-input-bg: #3e3e3e63;
     --clr-error: #f66969;
+    --box-shadow-1: rgb(0 0 0 / 35%) 0px 5px 15px;
 }
