@@ -3,7 +3,6 @@
     border-radius: 6px;
     display: grid;
     grid-template-columns: 1rem 1fr 2rem;
-    margin: 0.5rem;
     &::before {
         content: "";
         display: inline-block;
@@ -52,6 +51,7 @@
         .heading {
             display: flex;
             align-items: center;
+            color: var(--clr-black);
         }
         p {
             margin-top: 0.6rem;
@@ -74,16 +74,17 @@
     }
 
     .close {
-        background: none !important;
-        padding: 0 !important;
+        background: none;
+        padding: 0;
         width: 2rem;
-        height: 2rem !important;
+        font-size: 1.2rem;
+        height: 2rem;
         transition: 0.2s;
         svg {
             color: #1c1c1c6b;
         }
         &:hover {
-            background: #c3c3c33b !important;
+            background: #c3c3c33b;
         }
     }
 }

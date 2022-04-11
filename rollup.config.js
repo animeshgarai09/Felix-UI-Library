@@ -43,7 +43,7 @@ export default [
             external(),
             resolve(),
             commonjs(),
-            terser()
+            // terser()
         ],
     },
 ];

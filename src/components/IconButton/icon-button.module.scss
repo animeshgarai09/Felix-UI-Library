@@ -10,15 +10,18 @@
     background: none;
     border: none;
     cursor: pointer;
-    color: var(--clr-black);
-    transition: 0.2s;
+    color: var(--clr-primary);
+    background: var(--clr-primary-light);
+    transition: 0.3s;
     @media (hover: hover) {
         &:hover {
-            background: var(--clr-primary-light);
+            color: #ffffff;
+            background: var(--clr-primary);
         }
     }
     &:active {
-        background: var(--clr-primary-light);
+        color: #ffffff;
+        background: var(--clr-primary);
     }
     .badge {
         display: inline-flex;
@@ -34,6 +37,6 @@
         position: absolute;
         top: 2px;
         left: 1.22rem;
-        border: 2px solid var(--clr-page-bg);
+        border: 2px solid var(--clr-grey-3);
     }
 }
