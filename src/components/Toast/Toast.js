@@ -96,7 +96,7 @@ const Toast = (
 Toast.propTypes = {
     id: PropTypes.string.isRequired,
     message: PropTypes.string.isRequired,
-    status: PropTypes.oneOf(['danger', 'info', 'warning', 'success', 'gray']).isRequired,
+    status: PropTypes.oneOf(['error', 'info', 'warning', 'success', 'gray']).isRequired,
     dispatch: PropTypes.func,
     duration: PropTypes.number,
     className: PropTypes.string,

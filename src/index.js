@@ -1,4 +1,4 @@
-import './global.scss'
+// import './global.scss'
 import Avatar from "./components/Avatar/Avatar";
 import AvatarGroup from "./components/Avatar/AvatarGroup";
 import Alert from "./components/Alert/Alert";
@@ -7,8 +7,7 @@ import ButtonGroup from "./components/Button/ButtonGroup";
 import ProductWrapper from "./components/Card/ProductCard/ProductWrapper";
 import ProductImage from "./components/Card/ProductCard/ProductImage";
 import { ProductBody, ProductActions } from "./components/Card/ProductCard/ProductBody";
-import ToastProvider from "./components/Toast/ToastProvider";
-import { useToast } from "./components/Toast/ToastProvider";
+import FelixProvider, { useToast } from "./components/FelixProvider/FelixProvider";
 import { List, ListItem } from "./components/List/List";
 import Image from "./components/Image/Image";
 import Badge from "./components/Badge/Badge";
@@ -26,7 +25,7 @@ export {
     ProductImage,
     ProductBody,
     ProductActions,
-    ToastProvider,
+    FelixProvider,
     useToast,
     List,
     ListItem,
