@@ -1,6 +1,6 @@
 {
     "name": "react-felix-ui",
-    "version": "0.1.14",
+    "version": "0.1.15",
     "description": "A react component library",
     "main": "dist/cjs/index.js",
     "module": "dist/esm/index.es.js",
@@ -8,12 +8,18 @@
         "type": "git",
         "url": "git://github.com/animeshgarai09/Felix-UI-Library.git"
     },
+    "keywords": [
+        "react",
+        "component",
+        "library",
+        "design"
+    ],
     "private": false,
     "scripts": {
         "rollup": "rollup -c",
         "prepublishOnly": "npm install && npm run rollup"
     },
-    "author": "Animesh Garai",
+    "author": "Animesh Garai (https://portfolio-alpha-liart.vercel.app/)",
     "license": "MIT",
     "devDependencies": {
         "@babel/preset-react": "^7.16.7",
