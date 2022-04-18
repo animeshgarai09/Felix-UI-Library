@@ -31,7 +31,7 @@ export default [
             postcss({
                 plugins: [autoprefixer()],
                 modules: {
-                    generateScopedName: "[hash:base64:8]",
+                    generateScopedName: "felix-[hash:base64:5]",
                 },
                 autoModules: true,
                 extract: true,
@@ -43,7 +43,7 @@ export default [
             external(),
             resolve(),
             commonjs(),
-            // terser()
+            terser()
         ],
     },
 ];
