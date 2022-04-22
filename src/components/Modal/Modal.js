@@ -41,7 +41,7 @@ const Modal = (
             closeOnEsc && document.removeEventListener("keydown", escFunction);
             blockScrollOnMount && bodyLock.unlock()
         };
-    }, [blockScrollOnMount, closeOnEsc, escFunction]);
+    }, [isOpen, blockScrollOnMount, closeOnEsc, escFunction]);
 
     const containerClass = classNames(
         styles.container,
