@@ -33,7 +33,7 @@ const Modal = (
     }, []);
 
     useEffect(() => {
-        blockScrollOnMount && bodyLock.lock()
+        isOpen && blockScrollOnMount && bodyLock.lock()
         closeOnEsc && document.addEventListener("keydown", escFunction);
         isOpen && onOpenFocus && onOpenFocus.current.focus()
 
