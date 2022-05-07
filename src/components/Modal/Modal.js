@@ -26,7 +26,6 @@ const Modal = (
     const bodyLock = useLockBodyScroll()
 
     const escFunction = useCallback((event) => {
-        console.log(event.key)
         if (event.keyCode === 27) {
             onClose()
         }

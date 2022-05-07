@@ -301,7 +301,7 @@ To find more detail on the below topics visit documentation on [Slider](https://
 
 ## 👨‍💻 Connect with me
 
-<a href="https://portfolio-alpha-liart.vercel.app/"><img src="https://img.shields.io/badge/my_portfolio-000?style=for-the-badge&logo=ko-fi&logoColor=white"/></a>
+<a href="https://animesh-designs.vercel.app/"><img src="https://img.shields.io/badge/my_portfolio-000?style=for-the-badge&logo=ko-fi&logoColor=white"/></a>
 <a href="https://twitter.com/animeshgarai09"><img src="https://img.shields.io/badge/Twitter-1DA1F2?style=for-the-badge&logo=twitter&logoColor=white"/></a>
 <a href="https://www.linkedin.com/in/animesh-garai-29a5251b4"><img src="https://img.shields.io/badge/LinkedIn-0077B5?style=for-the-badge&logo=linkedin&logoColor=white"/></a>
 <a href="mailto:animeshgarai09@gmail.com"><img src="https://img.shields.io/badge/Gmail-D14836?style=for-the-badge&logo=gmail&logoColor=white"/></a>
