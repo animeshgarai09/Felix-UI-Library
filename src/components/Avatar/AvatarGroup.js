@@ -12,7 +12,7 @@ const AvatarGroup = (
     }) => {
 
     return (
-        <div className={`${styles.group} ${styles[size]} ${className ? className : ''}`}>
+        <div className={`${styles.group} ${styles[size + "-g"]} ${className ? className : ''}`}>
             {children.slice(0, show)}
             <Avatar num={max || (children.slice(show, children.length)).length} />
         </div>
